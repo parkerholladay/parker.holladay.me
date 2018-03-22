@@ -1,0 +1,120 @@
+﻿body {
+    background-color: #F0F0F0;
+}
+a, a:hover, a:active, a:visited {
+    color: #F15B2A;
+    text-decoration: none;
+}
+pre {
+    border-radius: 4px;
+}
+code {
+    background-color: #282c34;
+    border-radius: 4px;
+    color: #98c379;
+    padding: 4px 6px;
+}
+blockquote {
+    background-color: #E0E0E0;
+    border-left: 4px solid #2391C0;
+    border-radius: 0 6px 6px 0;
+    margin: 16px;
+    padding: 4px 8px;
+}
+img {
+    max-height: 250px;
+}
+
+.main-nav-container, .main-content-container, .main-footer-container {
+    max-width: 800px;
+}
+
+.main-nav-container {
+    margin-top: 12px;
+}
+.main-nav {
+    background-color: #F15B2A;
+    font-size: 20px;
+    min-height: 80px;
+    padding-top: 20px;
+}
+.main-nav-brand {
+    font-size: 24px;
+}
+.main-nav-list {
+    margin-left: 40px;
+}
+.main-nav-list.collapsing, .main-nav-list.show {
+    margin-left: 0;
+}
+
+.main-content {
+    background-color: #F0F0F0;
+    color: #222;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    margin-top: 104px;
+    min-height: 640px;
+    padding-bottom: 16px;
+}
+.main-content pre {
+    line-height: 24px;
+}
+
+.main-footer {
+    background-color: #F15B2A;
+    color: #F0F0F0;
+    font-size: 16px;
+    min-height: 200px;
+    padding-top: 16px;
+}
+.main-footer a {
+    color: #F0F0F0;
+    text-decoration: underline;
+}
+.main-footer a:hover {
+    color: #F15B2A;
+}
+
+.post-date {
+    background-color: #2381D0;
+    border-radius: 4px;
+    color: #F0F0F0;
+    display: inline-block;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 6px 12px;
+    margin: 0 20px 16px 0;
+}
+.post-tag {
+    background-color: #585c64;
+    border-radius: 4px;
+    color: #F0F0F0;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 0 16px 4px;
+    padding: 4px 8px;
+}
+
+.abstract {
+    margin-top: 40px;
+}
+.abstract-date {
+    display: inline;
+    font-size: 20px;
+    padding: 4px 10px;
+}
+.abstract-tag {
+    display: inline;
+    font-size: 16px;
+}
+
+.about-me {
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}

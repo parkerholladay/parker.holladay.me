@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>@Model.Title</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" type="text/css" href="~/content/css/main.css" />
+</head>
+<body>
+  <nav class="main-nav navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="main-nav-container container">
+      <a class="main-nav-brand navbar-brand" href="/">parker.holladay.me</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".main-nav-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="main-nav-list navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+          @If.IsHome
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          @EndIf
+          @IfNot.IsHome
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          @EndIf
+          @If.IsPost
+          <li class="nav-item active">
+            <a class="nav-link" href="/posts">Posts <span class="sr-only">(current)</span></a>
+          </li>
+          @EndIf
+          @IfNot.IsPost
+          <li class="nav-item"><a class="nav-link" href="/posts">Posts</a></li>
+          @EndIf
+          @If.IsAbout
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About <span class="sr-only">(current)</span></a>
+          </li>
+          @EndIf
+          @IfNot.IsAbout
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          @EndIf
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <div class="main-content-container container">
+      @Section['content']
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="main-footer-container container">
+<pre><code class="language-javascript">let licensing = { prose: '<a rel="license" href="http://creativecommons.org/licenses/by/4.0" target="_blank">CC 4.0 ATTR</a>', code: '<a rel="license" href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>' }
+const author = {
+    name: 'Parker Holladay',
+    twitter: '<a href="https://twitter.com/parker_holladay" target="_blank">@parker_holladay</a>',
+    github: '<a href="https://github.com/parkerholladay" target="_blank">parkerholladay</a>',
+    linkedIn: '<a href="https://www.linkedin.com/in/parker-holladay-ba059633" target="_blank">parker-holladay-ba059633</a>'
+}</code></pre>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
