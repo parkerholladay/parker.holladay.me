@@ -15,3 +15,7 @@ Coming soon
 @Each.Tags
 <div class="post-tag">@Current</div>
 @EndEach
+
+@IfNot.HasDate
+`Post forth-coming...`
+@EndIf
